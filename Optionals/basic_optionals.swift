@@ -100,3 +100,35 @@ func layeredguard()->Bool{
         return false
     }
 }
+
+//OPTIONAL CHAINING
+func getusername()->String?{
+    return "test"
+}
+
+func getuserdata(){
+    let username:String?=getusername()
+    //COUNT OF USERNAME IS NOT NILL
+    let count=username?.count
+
+    let title:String=getitlee()
+    // TITLE OF THE COUNT
+    let count2=title.count ?? 00
+
+    // IF USERNAME HAS A VALUE AND FIRST CHAT IS USERNAME HAS VALUE THEN RETURN THE VALUE OF THE LOWERCASE
+    // OPTIONAL CHAINING
+    let firstcharlowercase=username?.first?.isLowercase ?? false
+
+    //GET THE COUNT BECAUSE IT KNOW 100 % THAT USRNAME IS NOT NILL
+    //THIS WILL CRASH YOUR APPICATION IF USERNAME IS NILL
+    //CRASH THE ENTIER APPLICATION
+    let count3:Int=username!.count
+}
+
+// SAFELY UNWRAP AN OPTIONAL 
+// NIL CLOASING
+// IF LET
+// GUARD
+
+//EXPLIXITY UNWRAP OPTIONAL
+// !

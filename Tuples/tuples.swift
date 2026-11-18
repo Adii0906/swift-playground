@@ -27,7 +27,7 @@ func getuserinfo() -> (name:String,isperimum:Bool) {
 var userdata1:String=username
 var userdata:(String,Bool,Bool)=(username,userisperimum.userisnew)
 
-let info1=getuserinfo() 
+let info1=getuserinfo()
 
 let namne1=info.0
 
